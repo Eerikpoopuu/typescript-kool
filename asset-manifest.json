@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/typescript-kool/static/css/main.f855e6bc.css",
+    "main.js": "/typescript-kool/static/js/main.c0f01d09.js",
+    "static/js/453.de1d3585.chunk.js": "/typescript-kool/static/js/453.de1d3585.chunk.js",
+    "index.html": "/typescript-kool/index.html",
+    "main.f855e6bc.css.map": "/typescript-kool/static/css/main.f855e6bc.css.map",
+    "main.c0f01d09.js.map": "/typescript-kool/static/js/main.c0f01d09.js.map",
+    "453.de1d3585.chunk.js.map": "/typescript-kool/static/js/453.de1d3585.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.c0f01d09.js"
+  ]
+}

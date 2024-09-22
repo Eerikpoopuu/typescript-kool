@@ -11,23 +11,8 @@ export default function MyForm() {
 
     console.log(form);
 
-    // console.log({
-    //   username,
-    //   password,
-    // });
   };
 
-  // useEffect(() => {
-  //   console.log("Renders every time");
-  // });
-
-  // useEffect(() => {
-  //   console.log("Renders first time");
-  // }, []);
-
-  // useEffect(() => {
-  //   console.log("Renders every time username changes");
-  // }, [username]);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     // setForm(prevForm => {

@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -12,7 +11,7 @@ import {
 import App from "./App";
 import MyForm from "./components/Login";
 import Home from "./components/Home";
-import MyInfo from "./components/User"; 
+import MyInfo from "./components/User";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,7 +19,7 @@ const router = createBrowserRouter(
       <Route path="/home" element={<Home />} />
       <Route path="/form" element={<MyForm />} />
       <Route path="/extra" element={<h1>Extra</h1>} />
-      <Route path="/contact" element={<h1>Contact</h1 >} />
+      <Route path="/contact" element={<h1>Contact</h1>} />
       <Route path="/me" element={<MyInfo />} />
     </Route>
   )
@@ -32,7 +31,7 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={router} /> 
   </React.StrictMode>
 );
 

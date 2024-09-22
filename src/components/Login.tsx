@@ -1,21 +1,15 @@
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
-import { FormEvent, useState, useEffect } from "react";
+import { FormEvent, useState } from "react";
 
 export default function MyForm() {
   const [form, setForm] = useState({ username: "", password: "" });
 
-
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-
-    console.log(form);
-
+    console.log(form); 
   };
 
-
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-
-
     setForm((prevForm) => ({
       ...prevForm,
       [event.target.name]: event.target.value,
@@ -43,14 +37,13 @@ export default function MyForm() {
             name="username"
             label="Username"
             variant="outlined"
-           
             onChange={handleChange}
           />
           <TextField
             name="password"
             label="Password"
+            type="password" // Lisa type "password", et peita parool
             variant="outlined"
-
             onChange={handleChange}
           />
           <Button variant="contained" type="submit">

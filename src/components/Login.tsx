@@ -3,8 +3,7 @@ import { FormEvent, useState, useEffect } from "react";
 
 export default function MyForm() {
   const [form, setForm] = useState({ username: "", password: "" });
-  // const [username, setUsername] = useState("");
-  // const [password, setPassword] = useState("");
+
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -15,10 +14,7 @@ export default function MyForm() {
 
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    // setForm(prevForm => {
-    //   return {
-    //   }
-    // })
+
 
     setForm((prevForm) => ({
       ...prevForm,
@@ -47,14 +43,14 @@ export default function MyForm() {
             name="username"
             label="Username"
             variant="outlined"
-            // onChange={(event) => setUsername(event.target.value)}
+           
             onChange={handleChange}
           />
           <TextField
             name="password"
             label="Password"
             variant="outlined"
-            // onChange={(event) => setPassword(event.target.value)}
+
             onChange={handleChange}
           />
           <Button variant="contained" type="submit">

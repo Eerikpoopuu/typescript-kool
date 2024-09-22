@@ -11,13 +11,17 @@ import {
 } from "react-router-dom";
 import App from "./App";
 import MyForm from "./components/Login";
+import Home from "./components/Home";
+import MyInfo from "./components/User"; 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
+      <Route path="/home" element={<Home />} />
       <Route path="/form" element={<MyForm />} />
       <Route path="/extra" element={<h1>Extra</h1>} />
-      <Route path="/contact" element={<h1>Contact</h1>} />
+      <Route path="/contact" element={<h1>Contact</h1 >} />
+      <Route path="/me" element={<MyInfo />} />
     </Route>
   )
 );
@@ -32,7 +36,4 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
